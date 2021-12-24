@@ -73,3 +73,15 @@ form input, form button {
 .list-item {
     flex: 1;
 }
+
+.done {
+    text-decoration: line-through;
+}
+
+.delete {
+    display: none;
+}
+
+.fa-check, .fa-trash {
+    pointer-events: none;
+}

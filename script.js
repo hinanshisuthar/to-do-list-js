@@ -44,18 +44,24 @@ function addTodo(event) {
 
     //clear todo input value
     inputText.value = "";
-    
+
+    //done btn event listener
     doneBtn.addEventListener("click", doneTodo);
 
-    function doneTodo(event) {
-        console.log(inputText.value);
-        // let listItemValue = inputText.value;
-        listItem.innerText.style.textDecoration = "strikethrough";
+    //function
+    function doneTodo(e) {
+        const todo = e.target.parentElement; //todoDiv
+        todo.classList.add("done");
     }
     
+    //delete btn event listener
+    deleteBtn.addEventListener("click", deleteTodo);
+
+    function deleteTodo(e){
+        const todoDelete = e.target.parentElement;
+        todoDelete.remove();
+    }
     
-
-
 }
 
 
