@@ -85,3 +85,10 @@ form input, form button {
 .fa-check, .fa-trash {
     pointer-events: none;
 }
+
+#filter-todos {
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: none;
+}
