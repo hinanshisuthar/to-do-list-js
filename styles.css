@@ -7,7 +7,7 @@
 }
 
 body {
-    background: linear-gradient(45deg, red, blue) fixed;;
+    background: linear-gradient(120deg, #DCA88A, #F2C2C5, #CF9BC5, #AE80C7 80%) fixed;
     font-family: 'Bitter', serif;
     display: flex;
     flex-direction: column;
@@ -21,24 +21,26 @@ header {
 
 form {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 form input, form button {
-    padding: 1rem;
+    padding: 0.5rem;
     border: none;
     background: white;
-    margin: 0.5rem;
+    margin: 0.5rem 0.2rem;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 #submit-btn {
-    background: transparent;
+    background: white;
     color: black;
-    font-size: 2rem;
-    padding: 0.55rem 1rem;
+    font-size: 1.5rem;
+    padding: 0.3rem 1rem;
     cursor: pointer;
+    /* border: 0.5px solid #AE80C7 ; */
     /* transition: all 0.5s ease; */
 }
 
@@ -46,11 +48,11 @@ form input, form button {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 40%;
 }
 
 .todo-list {
     list-style: none;
-    min-width: 40%;
 }
 
 .todo-div {
@@ -60,14 +62,13 @@ form input, form button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
-.done-btn, .delete-btn {
+.done-btn, .delete-btn, .star-btn {
     padding: 0.5rem;
     margin: 0 0.5rem;
     cursor: pointer;
-
 }
 
 .list-item {
@@ -82,13 +83,18 @@ form input, form button {
     display: none;
 }
 
-.fa-check, .fa-trash {
+.fa-check, .fa-trash, .fa-star {
     pointer-events: none;
 }
 
 #filter-todos {
     margin: 0.5rem;
-    padding: 1rem;
+    padding: 0.5rem;
     font-size: 1.2rem;
     border: none;
+    text-align: center;
+}
+
+.selected {
+    color: gold;
 }

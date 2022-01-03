@@ -9,19 +9,21 @@
     <title>To Do List</title>
 </head>
 <body>
-    
+
     <header>
-        <h1>Hinanshi's Todo List</h1>
+        <h1>Today's Todo</h1>
     </header>
     <form >
-        <input type="text" name="todo" id="add-todo" />
-        <button type="submit" id="submit-btn"><i class="fas fa-plus"></i></button>
-        <select name="options" id="filter-todos">
-            <option value="All">All</option>
-            <option value="Completed">Completed</option>
-            <option value="Uncompleted">Uncompleted</option>
-        </select>
+        <input type="text" name="todo" id="add-todo" required />
+        <button type="submit" id="submit-btn"><i class="fas fa-plus-square"></i></button>
     </form>
+
+    <select name="options" id="filter-todos">
+        <option value="All">All</option>
+        <option value="Completed">Completed</option>
+        <option value="Uncompleted">Uncompleted</option>
+        <option value="Starred">Starred</option>
+    </select>
 
     <div class="todo-container">
         <ul class="todo-list">
